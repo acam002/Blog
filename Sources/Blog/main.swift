@@ -22,7 +22,11 @@ struct Blog: Website {
 }
 
 // This will generate your website using the built-in Foundation theme:
-try Blog().publish(using:
-    [.generateHTML(withTheme: .foundation),
-    .deploy(using: .gitHub("acam002/acam002.github.io"))
+try Blog().publish(
+    using: [
+    .addMarkdownFiles(),
+    .copyResources(),
+    .generateHTML(withTheme: .foundation),
+    .generateSiteMap(),
+    .deploy(using: .gitHub("navanchauhan/navanchauhan.github.io"))
 ])
