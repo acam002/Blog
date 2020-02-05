@@ -16,6 +16,7 @@ struct HTMLBlogFactory: HTMLFactory {
             .head(for: context.site),
             .body(
                 .grid(
+                    .header(for: context.site),
                     .sidebar(for: context.site)
                 )
             )
