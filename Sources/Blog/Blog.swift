@@ -15,6 +15,7 @@ struct Blog: Website {
     enum SectionID: String, WebsiteSectionID {
         // Add the sections that you want your website to contain here:
         case posts
+        case about
     }
 
     struct ItemMetadata: WebsiteItemMetadata {
@@ -24,8 +25,9 @@ struct Blog: Website {
 
     // Update these properties to configure your website:
     var url = URL(string: "https://acam002.github.io")!
-    var name = "Alberto's Blog"
-    var description = "Welcome! Take a look at my Blog!"
+    var name = "Alberto Camacho"
+    var description = "Software Engineer"
     var language: Language { .english }
     var imagePath: Path? { nil }
+    var socialMediaLinks: [SocialMediaLink] = [.location, .email, .linkedIn, .github, .twitter]
 }
