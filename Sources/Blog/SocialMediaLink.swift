@@ -17,7 +17,7 @@ extension SocialMediaLink {
     static var location: SocialMediaLink {
         return SocialMediaLink(
             title: "Miami, Florida",
-            url: "https://en.wikipedia.org/wiki/Vilnius",
+            url: "https://en.wikipedia.org/wiki/Miami",
             icon: "fas fa-map-marker-alt"
         )
     }
