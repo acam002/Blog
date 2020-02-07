@@ -1,10 +1,3 @@
-//
-//  File.swift
-//  
-//
-//  Created by Alberto Camacho on 2/5/20.
-//
-
 import Plot
 
 

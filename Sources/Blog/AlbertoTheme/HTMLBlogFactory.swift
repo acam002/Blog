@@ -17,7 +17,16 @@ struct HTMLBlogFactory: HTMLFactory {
             .body(
                 .grid(
                     .header(for: context.site),
-                    .sidebar(for: context.site)
+                    .sidebar(for: context.site),
+                    .posts(
+                        for: context.allItems (
+                            sortedBy: \.date,
+                            order: .descending
+                        ),
+                        on: context.site,
+                        title: "Recent posts"
+                    ),
+                    .footer(for: context.site)
                 )
             )
         )

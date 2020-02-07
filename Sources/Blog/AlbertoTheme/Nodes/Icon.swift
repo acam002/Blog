@@ -1,7 +1,3 @@
-//
-//  Created by Povilas Staskus on 1/26/20.
-//
-
 import Plot
 
 extension Node where Context == HTML.AnchorContext {
