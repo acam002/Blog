@@ -50,8 +50,12 @@ struct HTMLBlogFactory: HTMLFactory {
             .head(for: context.site),
             .body(
                 .grid(
-                    .sidebar(for: context.site)
+                    .header(for: context.site),
+                    .sidebar(for: context.site),
+                    .post(for: item, on: context.site),
+                    .footer(for: context.site)
                 )
+                
             )
         )
     }
