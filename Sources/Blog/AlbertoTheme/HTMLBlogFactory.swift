@@ -38,7 +38,10 @@ struct HTMLBlogFactory: HTMLFactory {
             .head(for: context.site),
             .body(
                 .grid(
-                    .sidebar(for: context.site)
+                    .header(for: context.site),
+                    .sidebar(for: context.site),
+                    .pageContent(.h1(.text(section.title))),
+                    .footer(for: context.site)
                 )
             )
         )
@@ -59,17 +62,20 @@ struct HTMLBlogFactory: HTMLFactory {
             )
         )
     }
-    
+    // Stuff for the about page just outside of post
     func makePageHTML(for page: Page, context: PublishingContext<Blog>) throws -> HTML {
         HTML(
-            .lang(context.site.language),
-            .head(for: context.site),
-            .body(
-                .grid(
-                    .sidebar(for: context.site)
-                )
-            )
-        )
+           .lang(context.site.language),
+           .head(for: context.site),
+           .body(
+               .grid(
+                   .header(for: context.site),
+                   .sidebar(for: context.site),
+                   .page(for: page, on: context.site),
+                   .footer(for: context.site)
+               )
+           )
+       )
     }
     
     func makeTagListHTML(for page: TagListPage, context: PublishingContext<Blog>) throws -> HTML? {
