@@ -24,7 +24,7 @@ struct Blog: Website {
     }
 
     // Update these properties to configure your website:
-    var url = URL(string: "https://acam002.github.io")!
+    var url = URL(string: "https://www.acamacho.dev")!
     var name = "Alberto Camacho"
     var description = "Software Engineer"
     var language: Language { .english }
