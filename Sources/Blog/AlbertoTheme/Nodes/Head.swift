@@ -25,7 +25,7 @@ extension Node where Context == HTML.DocumentContext {
             ),
             .link(
                 .rel(.stylesheet),
-                .href("/all.css")
+                .href("/styles/all.css")
             )
         )
     }

@@ -16,6 +16,7 @@ struct Blog: Website {
         // Add the sections that you want your website to contain here:
         case posts
         case about
+        case angular
     }
 
     struct ItemMetadata: WebsiteItemMetadata {
