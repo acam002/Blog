@@ -16,7 +16,6 @@ struct Blog: Website {
         // Add the sections that you want your website to contain here:
         case posts
         case about
-        case angular
     }
 
     struct ItemMetadata: WebsiteItemMetadata {
@@ -30,5 +29,5 @@ struct Blog: Website {
     var description = "Software Engineer"
     var language: Language { .english }
     var imagePath: Path? { nil }
-    var socialMediaLinks: [SocialMediaLink] = [.location, .email, .linkedIn, .github, .twitter]
+    var socialMediaLinks: [SocialMediaLink] = [.location, .email, .linkedIn, .github, .twitter, .resume]
 }

@@ -1,3 +1,7 @@
+:root {
+    color-scheme: light dark;
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -10,7 +14,6 @@
 
 a {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.8);
 }
 a:hover,
 a:focus {
@@ -41,11 +44,6 @@ h3 {
     margin: 1em 1em 0;
 }
 
-.sidebar {
-    background: #fff;
-    color: rgba(0, 0, 0, 0.8);
-}
-
 .brand-title,
 .brand-tagline {
     margin: 0;
@@ -55,7 +53,6 @@ h3 {
 }
 .brand-tagline {
     font-weight: 300;
-    color: rgba(0, 0, 0, 0.8);
 }
 
 .nav-list {
@@ -71,7 +68,6 @@ h3 {
 .nav-item a {
     background: transparent;
     border: 2px solid rgb(176, 202, 219);
-    color: #fff;
     margin-top: 1em;
     letter-spacing: 0.05em;
     text-transform: uppercase;
@@ -85,7 +81,6 @@ h3 {
 
 .content-subhead {
     text-transform: uppercase;
-    color: #aaa;
     border-bottom: 1px solid #eee;
     padding: 0.4em 0;
     font-size: 80%;
@@ -102,7 +97,6 @@ h3 {
 }
 .post-title {
     font-size: 2em;
-    color: #222;
     margin-bottom: 0.2em;
 }
 .post-avatar {
@@ -111,7 +105,6 @@ h3 {
     margin-left: 1em;
 }
 .post-description {
-    color: #444;
     line-height: 1.8em;
 }
 
@@ -140,7 +133,6 @@ h3 {
 .post-category {
     margin: 0 0.1em;
     padding: 0.3em 1em;
-    color: #fff;
     background: #999;
     font-size: 60%;
     border-radius: 8px;
@@ -148,18 +140,30 @@ h3 {
 
 /*    American Palette https://flatuicolors.com/palette/us*/
 
-    .post-category-swift {
-        background: #90AFC5;
-    }
-    .post-category-ios {
-        background: #336B87;
-    }
-    .post-category-tutorial {
-        background: #2A3132;
-    }
-    .post-category-other {
-        background: #763526;
-    }
+.post-category-swift {
+    background: #0984e3;
+}
+.post-category-ios {
+    background: #336B87;
+}
+.post-category-tutorial {
+    background: #2A3132;
+}
+.post-category-other {
+    background: #763526;
+}
+.post-category-publish {
+    background: #d63031;
+}
+.post-category-uikit {
+    background: #6c5ce7;
+}
+.post-category-xcode {
+    background: #00b894;
+}
+.post-category-web {
+    background: #e17055;
+}
 
 .post-images {
     margin: 1em 0;
@@ -173,22 +177,15 @@ h3 {
 
 .footer {
     padding: 1em 0;
-    color: #ccc;
     font-size: 90%;
     text-align: center;
 }
 
 .footer a {
     padding: 1em 0;
-    color: #ccc;
     font-size: 90%;
     text-decoration: underline;
     text-align: center;
-}
-
-.footer .pure-menu a:hover,
-.footer .pure-menu a:focus {
-    background: none;
 }
 
 .pure-menu {
@@ -249,6 +246,29 @@ h3 {
         position: fixed;
         top: 0em;
         background: #fff;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body, .pure-menu, .pure-menu-link, .pure-menu-heading {
+        background-color: #303030;
+        color: #e0e0e0;
+    }
+    
+    a {
+        color: #e0e0e0;
+    }
+    
+    .pure-menu a:hover,
+    .pure-menu a:focus {
+        background-color: #303030;
+        color: #e0e0e0;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    a {
+        color: text;
     }
 }
 

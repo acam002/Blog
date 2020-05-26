@@ -53,4 +53,11 @@ extension SocialMediaLink {
             icon: "fab fa-twitter-square"
         )
     }
+    
+    static var resume: SocialMediaLink {
+        return SocialMediaLink (
+            title: "Resumé",
+            url: "/Alberto_Camacho.pdf",
+            icon: "fas fa-file")
+    }
 }
