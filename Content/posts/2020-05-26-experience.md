@@ -1,7 +1,7 @@
 ---
 date: 2020-05-26 20:28
 description: How to setup Programmatic UI in XCode 11
-tags: swift, uikit, xcode, web
+tags: angular, swift, uikit, xcode, web
 excerpt: An interesting and informative experience
 ---
 # What Time in the Software Engineering Industry has Taught Me

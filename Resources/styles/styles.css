@@ -153,7 +153,7 @@ h3 {
     background: #763526;
 }
 .post-category-publish {
-    background: #d63031;
+    background: #fd79a8;
 }
 .post-category-uikit {
     background: #6c5ce7;
@@ -164,7 +164,9 @@ h3 {
 .post-category-web {
     background: #e17055;
 }
-
+.post-category-angular {
+    background: #d63031;
+}
 .post-images {
     margin: 1em 0;
 }
@@ -264,20 +266,47 @@ h3 {
         background-color: #303030;
         color: #e0e0e0;
     }
+    
+    table, td, th {
+        border: 1px solid white;
+    }
 }
 
 @media (prefers-color-scheme: light) {
     a, .pure-menu-link, .pure-menu-item, .pure-menu-heading {
         color: black;
     }
+    
     .pure-menu a:hover,
     .pure-menu a:focus {
         background-color: white;
+    }
+    
+    table td, th {
+        border: 0.5px solid black;
     }
 }
 
 .center {
   justify-content: center;
+}
+
+tr, td {
+    text-align: center;
+}
+
+table {
+    border-collapse: separate;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td {
+    padding: 10px;
+}
+
+tr:last-child {
+    border-bottom: none;
 }
 
 pre {
