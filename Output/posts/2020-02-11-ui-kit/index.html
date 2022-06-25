@@ -2,7 +2,7 @@
     <span class="comment">// Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).</span>
-    <span class="keyword">guard let</span> _ = (scene <span class="keyword">as</span>? <span class="type">UIWindowScene</span>) <span class="keyword">else</span> { <span class="keyword">return</span> }
+    <span class="keyword">guard let _</span> = (scene <span class="keyword">as</span>? <span class="type">UIWindowScene</span>) <span class="keyword">else</span> { <span class="keyword">return</span> }
 }
 </code></pre><p>The comments inside this code block gives us some nice direction.</p><ol><li>Remove the contents of <code>scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions)</code> .</li></ol><ol start="2"><li>Paste the following code:</li></ol><pre><code><span class="keyword">guard let</span> windowScene = (scene <span class="keyword">as</span>? <span class="type">UIWindowScene</span>) <span class="keyword">else</span> { <span class="keyword">return</span> }
 window = <span class="type">UIWindow</span>(frame: windowScene.<span class="property">coordinateSpace</span>.<span class="property">bounds</span>)

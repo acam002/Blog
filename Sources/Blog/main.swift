@@ -1,12 +1,12 @@
 import Foundation
 import Publish
 import SplashPublishPlugin
-import CNAMEPublishPlugin
+//import CNAMEPublishPlugin
 
 try Blog().publish(
     withTheme: .blog,
     additionalSteps: [
-        .deploy(using: .gitHub("acam002/acam002.github.io", useSSH: false))
+        .deploy(using: .gitHub("acam002/acam002.github.io", useSSH: true))
     ],
-    plugins: [.splash(withClassPrefix: ""), .addCNAME()]
+    plugins: [.splash(withClassPrefix: "")]
 )
