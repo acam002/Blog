@@ -6,7 +6,7 @@ extension Node where Context == HTML.BodyContext {
             .class("footer pure-u-1"),
             .div(
                 .class("pure-u-1"),
-                .text("© 2020 \(site.name)")
+                .text("© 2022 \(site.name)")
             ),
             .div(
                 .class("pure-u-1"),
